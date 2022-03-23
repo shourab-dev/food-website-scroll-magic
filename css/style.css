@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --primary-color: #d3eefe;
+}
+/* nav */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999999999999;
+}
+.navbar .navbar-brand {
+  color: rgb(31, 31, 31);
+  font-weight: 700;
+  font-family: "Courgette", cursive;
+  font-size: 2rem !important;
+}
+.navbar ul li a {
+  color: rgb(155, 155, 155);
+  font-weight: 600;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: rgb(37, 37, 37);
+}
+
+/* first section */
+#ingredient {
+  width: 100%;
+  min-height: 150vh;
+  background-image: url(../img/section_1_bg.webp);
+  background-position: center;
+  background-size: cover;
+  padding-top: 125px;
+  text-align: center;
+}
+h2.heading {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #555;
+}
+h2.heading > span {
+  color: #111;
+  text-transform: uppercase;
+}
+.all_ingridients {
+  position: relative;
+}
+.all_ingridients img {
+  position: absolute;
+}
+.all_ingridients img:nth-child(1) {
+  top: 211px;
+  left: 509px;
+}
+.all_ingridients img:nth-child(2) {
+  top: 351px;
+  left: 543px;
+}
+.all_ingridients img:nth-child(3) {
+  top: 272px;
+  left: 391px;
+}
+.all_ingridients img:nth-child(4) {
+  top: 485px;
+  left: 583px;
+}
+.all_ingridients img:nth-child(5) {
+  top: 436px;
+  left: 453px;
+}
+.all_ingridients img:nth-child(6) {
+  top: 415px;
+  left: 376px;
+}
+.all_ingridients img:nth-child(7) {
+  top: 648px;
+  left: 499px;
+}
+.all_ingridients img:nth-child(8) {
+  top: 537px;
+  left: 536px;
+}
+.all_ingridients img:nth-child(9) {
+  top: 533px;
+  left: 381px;
+}
+
+/* 2nd section */
+
+#vegies {
+  min-height: 100vh;
+  background-color: #d3eefe;
+  padding-top: 100px;
+  overflow: hidden;
+}
+#vegies h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.bottom_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  position: relative;
+}
+.bottom_wrapper .bt_img {
+  width: 20%;
+}
+
+.bottom_wrapper .bt_img img {
+  width: 100%;
+}
+.top_wrapper {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* slice section */
+
+#slice {
+  min-height: 120vh;
+
+  /* background-color: var(--primary-color); */
+  background-color: rgb(255, 246, 240);
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+}
+.slice_heading {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #555;
+}
+.slice_heading span:last-child {
+  color: #111;
+  text-transform: uppercase;
+}
+.slice_images {
+  position: relative;
+}
+.slice_img {
+  position: absolute;
+  top: 40vh;
+}
+.slice_img:nth-child(6) {
+  z-index: 1;
+}
+.slice_img:nth-child(5) {
+  z-index: 2;
+}
+
+.slice_img:nth-child(4) {
+  z-index: 3;
+}
+
+.slice_img:nth-child(3) {
+  z-index: 4;
+}
+
+.slice_img:nth-child(2) {
+  z-index: 5;
+}
+.slice_img:nth-child(1) {
+  z-index: 6;
+}
+
+#newyork_pizza {
+  background-color: var(--primary-color);
+  min-height: 145vh;
+  padding-top: 60px;
+  background-position: bottom center;
+  text-align: center;
+}
+.pizza_wrapper {
+  position: relative;
+}
+.full_pizza {
+  position: relative;
+}
+.done,
+.pizza_wrapper .pizza {
+  position: absolute;
+}
+.done {
+  left: 0;
+}
+
+.pizza_wrapper .pizza:nth-child(1) {
+  z-index: 1;
+}
+.pizza_wrapper .pizza:nth-child(2) {
+  z-index: 3;
+}
+.pizza_wrapper .pizza:nth-child(3) {
+  z-index: 4;
+}
